@@ -58,4 +58,8 @@ Pivotagem monetária que isola os valores efetivamente pagos entre recebimentos 
 
 ---
 
-📁 **Código Fonte:** Confira a implementação inteira no arquivo [`script.sql`](https://github.com/sqlucasql/sql-analytics-cobranca/blob/main/script.sql).
+## 🚀 Como Executar o Projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/sqlucasql/sql-analytics-cobranca.git](https://github.com/sqlucasql/sql-analytics-cobranca.git)
