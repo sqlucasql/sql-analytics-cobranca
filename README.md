@@ -1,6 +1,8 @@
-# 📊 Analise Financeira e Cobrança de Faturas em SQL
+# 📊 Análise Financeira e Cobrança de Faturas em SQL
 
 Este repositório contém um conjunto de consultas analíticas voltadas para o setor financeiro e de cobrança. O objetivo do projeto é demonstrar a aplicação de **regras de negócio aplicadas**, **tratamento defensivo de dados nulos** e **agregação condicional (*Conditional Aggregation*)** para transformar dados brutos em relatórios executivos consolidados.
+
+🔗 **Acesse o script SQL completo:** [`script.sql`](https://github.com/sqlucasql/sql-analytics-cobranca/blob/main/script.sql)
 
 ---
 
@@ -53,3 +55,7 @@ Pivotagem monetária que isola os valores efetivamente pagos entre recebimentos 
 - **Prevenção de Nulos em Relatórios (`COALESCE` Externo):** Envolver a função de agregação com `COALESCE(SUM(...), 0.00)` impede que clientes sem movimentações na condição filtrada retornem `NULL`, garantindo compatibilidade direta com dashboards de BI (Power BI / Tableau).
 - **Contagem vs. Soma Condicional:** Uso de `THEN 1` para contagem de volume de registros (`COUNT`) e `THEN COLUNA_VALOR` para acúmulo financeiro (`SUM`).
 - **Garantia de Integridade:** Uso de `ELSE 0` dentro das estruturas `CASE` em operações monetárias para evitar falhas de cálculo no resultado final.
+
+---
+
+📁 **Código Fonte:** Confira a implementação inteira no arquivo [`script.sql`](https://github.com/sqlucasql/sql-analytics-cobranca/blob/main/script.sql).
